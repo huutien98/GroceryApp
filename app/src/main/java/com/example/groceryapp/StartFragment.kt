@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_start.*
 
 
@@ -29,10 +30,11 @@ class StartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btn_sign_in.setOnClickListener {
-
+            findNavController().navigate(R.id.action_startFragment_to_signInFragment)
         }
 
         btn_sign_up.setOnClickListener {
+            findNavController().navigate(R.id.action_startFragment_to_signUpFragment)
 
         }
     }

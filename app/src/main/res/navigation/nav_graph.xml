@@ -21,10 +21,19 @@
         android:id="@+id/signInFragment"
         android:name="com.example.groceryapp.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.groceryapp.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.example.groceryapp.StoreFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" />
 </navigation>
