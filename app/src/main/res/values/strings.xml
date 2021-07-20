@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">GroceryApp</string>
-    <string name="wellcomeGrocery">Welcome to \n Grocery shopping</string>
+    <string name="wellcomeGrocery">Welcome to \nGrocery shopping</string>
 </resources>
